@@ -4,7 +4,7 @@ namespace MortalEnemies
     {
         None,
         Original,
-        Rival Remix
+        RivalRemix
     }
 
     public class Settings
