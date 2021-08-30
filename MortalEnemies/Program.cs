@@ -132,7 +132,7 @@ namespace MortalEnemies
                 }
             }
 
-            if (Settings.CommitmentMode != AttackCommitment.None)
+            if (Settings.ModeEngagement != AttackCommitment.None)
             {
                 MoveTypePatcher mtPatcher = new MoveTypePatcher(state, Settings);
                 mtPatcher.run();
