@@ -4,11 +4,11 @@ namespace MortalEnemies
     {
         None,
         Original,
-        RivalRemix
+        Rival Remix
     }
 
     public class Settings
     {
-        public AttackCommitment CommitmentMode = AttackCommitment.Original;
+        public AttackCommitment ModeEngagement = AttackCommitment.Original;
     }
 }
