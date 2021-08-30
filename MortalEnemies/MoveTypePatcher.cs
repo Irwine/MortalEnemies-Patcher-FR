@@ -83,7 +83,7 @@ namespace MortalEnemies
                     {
                         newMoveType.RotateWhileMovingRun = mtData[moveType.EditorID]["Rotate while Moving Run"];
                     }
-                    if (this.settings.CommitmentMode == AttackCommitment.RivalRemix && this.remixLinks.Contains(movementTypeLink))
+                    if (this.settings.ModeEngagement == AttackCommitment.RivalRemix && this.remixLinks.Contains(movementTypeLink))
                     {
                         newMoveType.RotateInPlaceWalk += 15.0000f;
                         newMoveType.RotateInPlaceRun += 15.0000f;
