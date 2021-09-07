@@ -36,7 +36,7 @@ namespace MortalEnemies
                 Skyrim.MovementType.NPC_PowerAttacking_MT,
                 Skyrim.MovementType.NPC_Attacking2H_MT
             };
-            // These types have some records offset by +15 when rival remix setting is on.
+            // These types have some records offset by +15 when remix setting is on.
             this.remixLinks = new()
             {
                 Skyrim.MovementType.NPC_Attacking2H_MT,
@@ -83,7 +83,7 @@ namespace MortalEnemies
                     {
                         newMoveType.RotateWhileMovingRun = mtData[moveType.EditorID]["Rotate while Moving Run"];
                     }
-                    if (this.settings.ModeEngagement == AttackCommitment.RivalRemix && this.remixLinks.Contains(movementTypeLink))
+                    if (this.settings.CommitmentMode == AttackCommitment.Remix && this.remixLinks.Contains(movementTypeLink))
                     {
                         newMoveType.RotateInPlaceWalk += 15.0000f;
                         newMoveType.RotateInPlaceRun += 15.0000f;
