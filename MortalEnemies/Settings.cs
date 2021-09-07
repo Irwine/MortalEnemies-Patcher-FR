@@ -1,14 +1,16 @@
+using Mutagen.Bethesda.WPF.Reflection.Attributes;
 namespace MortalEnemies
 {
     public enum AttackCommitment
-    {
-        None,
+    {   
+        Aucun,
         Original,
-        RivalRemix
+        Remix
     }
 
     public class Settings
     {
-        public AttackCommitment ModeEngagement = AttackCommitment.Original;
+        [SettingName("Mode d'engagement")]
+        public AttackCommitment CommitmentMode = AttackCommitment.Original;
     }
 }
